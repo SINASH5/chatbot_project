@@ -71,7 +71,16 @@ This system operates completely offline and can be deployed on your local machin
 3. Visit the URL provided by Streamlit (usually `http://localhost:8501`) to interact with the chatbot.
 
 ## Project Structure
+chatbot_project/
+├── backend/                         # Contains FastAPI backend files
+│   ├── main.py                      # Main application entry point
+│   ├── chat_service.py              # Handles chatbot logic and responses
+│   ├── llm_service.py               # Handles interaction with LLM
+│   └── requirements.txt             # Python dependencies for the backend
+│
+├── frontend/                        # Contains Streamlit frontend files
+│   ├── streamlit_app.py                      # Streamlit app for the UI
+│   └── requirements.txt                      # Static files for the frontend (e.g., images, styles)
+└──    README.md                        # This file            
 
-
-chatbot_project/ │ ├── backend/ # Contains FastAPI backend files │ ├── main.py # Main application entry point │ ├── chat_service.py # Handles chatbot logic and responses │ ├── llm_service.py # Handles interaction with LLM │ └── requirements.txt # Python dependencies for the backend │ ├── frontend/ # Contains Streamlit frontend files │ ├── app.py # Streamlit app for the UI │ └── assets/ # Static files for the frontend (e.g., images, styles) │ ├── data/ # Contains any datasets or pre-trained models │ ├── models/ # Pre-trained model files (if any) │ └── user_data/ # User input data or logs │ ├── .gitignore # Git ignore file to avoid versioning unnecessary files ├── README.md # This file └── requirements.txt # Common dependencies for both backend and frontend
 
